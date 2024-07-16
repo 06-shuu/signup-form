@@ -11,8 +11,11 @@
 <body>
     <div class="container">
         <div class="left-div">
-            <div><img src="./img/logo.png" alt="logo"></div>
-            <div>
+            <div class="img-div">
+                <img src="./imgs/logo.png" alt="logo">
+                <h1>ODIN</h1>
+            </div>
+            <div class="footer">
                 <p><u>Halie West</u> on <a href="https://unsplash.com/">Unsplash</a> </p>
             </div>
         </div>
@@ -25,32 +28,35 @@
                 <p>You <em>know</em> you want to.</p>
             </div>
             <form action="">
-                <div>
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="fname">
+                <div class="group-form">
+                    <h2>Let's do this!</h2>
+                    <div>
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="fname" minlength="3" maxlength="30">
+                    </div>
+                    <div>
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" id="last-name" name="lname" minlength="3" maxlength="30">
+                    </div>
+                    <div>
+                        <label for="user-mail">EMAIL</label>
+                        <input type="email" id="user-mail" name="mail">
+                    </div>
+                    <div>
+                        <label for="phone-no">PHONE NUMBER</label>
+                        <input type="number" id="phone-no" name="phone" min="1" >
+                    </div>
+                    <div>
+                        <label for="passwd">PASSWORD</label>
+                        <input type="password" id="passwd" name="passwd">
+                        <p><!--if password not match render a msg here--></p>
+                    </div>
+                    <div>
+                        <label for="passwd">CONFIRM PASSWORD</label>
+                        <input type="password" id="passwd" name="passwd">
+                    </div>
                 </div>
-                <div>
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="lname">
-                </div>
-                <div>
-                    <label for="user-mail">EMAIL</label>
-                    <input type="email" id="user-mail" name="mail">
-                </div>
-                <div>
-                    <label for="phone-no">PHONE NUMBER</label>
-                    <input type="number" id="phone-no" name="phone">
-                </div>
-                <div>
-                    <label for="passwd">PASSWORD</label>
-                    <input type="password" id="passwd" name="passwd">
-                    <p><!--if password not match render a msg here--></p>
-                </div>
-                <div>
-                    <label for="passwd">CONFIRM PASSWORD</label>
-                    <input type="password" id="passwd" name="passwd">
-                </div>
-                <button type="submit">Create Account</button>
+                <button type="submit" id="btn">Create Account</button>
             </form>
             <div class="login">
                 <p>Already have an account?</p>
