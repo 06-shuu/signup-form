@@ -37,13 +37,11 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        background-color: aqua;
         background-image: url(../imgs/bg.jpg);
         background-position: center;
         background-size: cover;
 
         .img-div {
-
             display: flex;
             align-items: center;
             justify-content: center;
