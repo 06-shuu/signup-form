@@ -54,19 +54,34 @@ h6 {
   font-weight: normal;
   font-style: normal;
 }
-html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   height: 100%;
-  display: flex;
+  background-color: #f5f3f3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .container .left-div {
-  flex: 0 0 300px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  background-color: aqua;
   background-image: url(../imgs/bg.jpg);
   background-position: center;
   background-size: cover;
@@ -75,24 +90,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  margin-top: 100px;
-  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 6.25rem;
+  padding: 0.625rem;
 }
 .container .left-div .img-div h1 {
   font-family: "norsebold", serif;
-  font-size: 50px;
+  font-size: 3.125rem;
   color: white;
 }
 .container .left-div .img-div img {
   width: 3rem;
 }
 .container .left-div .footer {
-  margin-top: auto;
-  color: #f5f3f3;
+  padding: 10px;
   text-align: center;
-  font-size: 12px;
-  padding-bottom: 10px;
+  color: #f5f3f3;
+  font-size: 0.75rem;
+  padding-bottom: 0.625rem;
 }
 .container .left-div .footer a {
   color: #f5f3f3;
