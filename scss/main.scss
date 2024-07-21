@@ -27,7 +27,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    // grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
     height: 100%;
     // width: 100%;
     background-color: $light-color;
@@ -179,5 +180,12 @@ body {
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width:60rem){
+
+    .container{
+        grid-template-columns: 1fr 2fr;
     }
 }
