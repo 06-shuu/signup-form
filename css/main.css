@@ -60,20 +60,22 @@ h6 {
   padding: 0;
 }
 
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
 }
 
 .container {
   display: grid;
   grid-template-rows: 1fr 2fr;
   height: 100%;
+  box-sizing: border-box;
   background-color: #f5f3f3;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -84,6 +86,7 @@ body {
   background-image: url(../imgs/bg.jpg);
   background-position: center;
   background-size: cover;
+  background-position: fixed;
 }
 .container .left-div .img-div {
   display: flex;
@@ -205,5 +208,6 @@ body {
 @media screen and (min-width: 60rem) {
   .container {
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: none;
   }
 }/*# sourceMappingURL=main.css.map */
